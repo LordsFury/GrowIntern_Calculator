@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    text-align: center;
+    padding: 1rem;
+    background-color: darkred;
+    box-shadow: 0.5rem 0.5rem 1rem 0.3rem darkblue;
+}
+
+.heading h1 {
+    font-size: 6vmin;
+    color: white;
+}
+
+.container {
+    height: 79vh;
+    width: 23vw;
+    max-width: 20rem;
+    background-color: black;
+    margin: auto;
+    margin-top: 5vh;
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: .05rem .1rem 0.5rem .5rem black;
+    border: 5px solid yellow;
+}
+
+.display {
+    height: 18vh;
+    color: white;
+    display: grid;
+    align-content: center;
+    justify-content: right;
+    padding-right: 1rem;
+}
+
+#txt {
+    font-size: 7vmin;
+    overflow: scroll;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: .5rem;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.box {
+    height: 4rem;
+    width: 4rem;
+    background-color: gray;
+    border: 2px solid gray;
+    border-radius: 50%;
+    font-size: 4vmin;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: rgb(95, 95, 95);
+    border: 2px solid rgb(95, 95, 95);
+}
+
+#sym {
+    background-color: orange;
+    border: 2px solid orange;
+}
+
+#sym:hover {
+    background-color: rgba(255, 166, 0, 0.904);
+    border: 2px solid rgba(255, 166, 0, 0.904);
+}
+
+.del {
+    font-size: 3vmin;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+    .heading h1 {
+        font-size: 6vmin;
+    }
+
+    .container {
+        width: 30%;
+        height: 40vh;
+    }
+
+    .display {
+        height: 10vh;
+    }
+
+    .box {
+        height: 4rem;
+        width: 4rem;
+        font-size: 3vmin;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: .4rem;
+    }
+
+    .del {
+        font-size: 2vmin;
+    }
+}
+
+@media (max-width: 1024px) {
+    .heading h1 {
+        font-size: 6vmin;
+    }
+
+    .container {
+        width: 21%;
+        height: 42vw;
+    }
+
+    .box {
+        height: 3rem;
+        width: 3rem;
+        font-size: 3vmin;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: .4rem;
+    }
+
+    .del {
+        font-size: 2vmin;
+    }
+}
+
+@media (max-width: 900px) {
+    .heading h1 {
+        font-size: 8vmin;
+    }
+
+    .container {
+        width: 80%;
+        height: 52vh;
+    }
+
+    .box {
+        height: 4rem;
+        width: 4rem;
+        font-size: 5vmin;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: .5rem;
+    }
+
+    .del {
+        font-size: 3vmin;
+    }
+}
+
+@media (max-width: 550px) {
+    .heading h1 {
+        font-size: 8vmin;
+    }
+
+    .container {
+        width: 80%;
+        height: 65vh;
+    }
+
+    .box {
+        height: 4rem;
+        width: 4rem;
+        font-size: 5vmin;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: .5rem;
+    }
+
+    .del {
+        font-size: 4vmin;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h1 {
+        font-size: 10vmin;
+    }
+
+    .container {
+        width: 60%;
+        height: 60vh;
+        margin-top: 8vh;
+    }
+
+    .box {
+        height: 3rem;
+        width: 3rem;
+        font-size: 6vmin;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.8rem;
+    }
+
+    .del {
+        font-size: 5vmin;
+    }
+}
